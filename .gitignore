@@ -1,9 +1,9 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+client/node_modules
+server/node_modules
 
-# dependencies
-node_modules/
+
 # Expo
-.expo/
+client/.expo
 dist/
 web-build/
 expo-env.d.ts
@@ -34,7 +34,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-
 
 server/.env
 .prettierrc
