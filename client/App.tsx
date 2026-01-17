@@ -1,13 +1,20 @@
-import { ExpoRoot } from "expo-router";
-import { KeyboardProvider } from "react-native-keyboard-controller";
-
-// @ts-ignore: require.context is a webpack feature used by expo-router
-const ctx = require.context("./app");
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-	return (
-		<KeyboardProvider>
-			<ExpoRoot context={ctx} />
-		</KeyboardProvider>
-	);
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

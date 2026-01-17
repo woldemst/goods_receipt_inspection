@@ -1,8 +1,7 @@
 {
   "expo": {
-    "name": "thenex-app-new",
-    "slug": "thenex-app-new",
-    "scheme": "thenex-app-new",
+    "name": "Goods Receipt Inspection",
+    "slug": "goods_receipt_inspection",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,17 +21,16 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.thenexappnew"
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
-      "BACKEND_URL": "http://192.168.10.91:3000"
+      "BACKEND_URL": "http://localhost:3000"
     },
     "plugins": [
-      "expo-router"
+      "expo-secure-store"
     ]
   }
 }
